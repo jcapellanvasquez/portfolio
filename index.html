@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
-    <link href="assets/css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
+<main class="container">
+    <nav class="navbar-container">
+        <ul class="navbar-nav">
+            <li class="navbar-item"><a href="#">Proyectos</a></li>
+            <li class="navbar-item"><a href="#sobre-mi">Sobre mi</a></li>
+            <li class="navbar-item"><a href="#">Herramientas</a></li>
+            <li class="navbar-item"><a href="#">Contacto</a></li>
+            <li class="navbar-item"><a href="#" class="active">Inicio</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="home-banner"></div>
+        <div class="home-title">
+            <h1>Hola!, Soy Julio</h1>
+            <ul class="home-profile">
+                <li class="profile-dev">Desarrollador</li>
+                <li class="profile-teacher">Docente</li>
+            </ul>
+        </div>
+        <div class="slide-button">
+            <p>Desliza</p>
+            <i class="fa fa-chevron-down main-color"></i>
+        </div>
+    </section>
+    <section id="sobre-mi" class="main-section">
+        <div class="avatar">
+            <div class="avatar-img-section">
+                <img class="avatar-image" src="assets/img/avatar.jpg">
+                <a href="https://github.com/jcapellanvasquez"><i class="fa fa-github"></i> Julio J. Capellán</a>
+            </div>
+            <div class="avatar-title-section">
+                <h1 class="main-color">Hola!, Soy Julio</h1>
+                <ul class="home-profile">
+                    <li class="profile-dev">Desarrollador</li>
+                    <li class="profile-teacher">Docente</li>
+                </ul>
+            </div>
+            <div class="avatar-content-section">
+                <h3>Conóceme un poco</h3>
+            </div>
+        </div>
+        <div class="content">
+            <img class="content-img" src="assets/img/bg-about-me.svg">
+            <h3 class="mt-2 main-color">Sobre mi</h3>
+            <p>
+                Mi nombre es Julio José Capellan Vasquez, me dedico al desarrollo de paginas web y móviles, hace 3 años
+                que estoy en este negocio de manera profesional.
+            </p>
+            <h3 class="main-color">El profesor</h3>
+            <p>
+                Te cuento que hace un año que incursioné en el mundo de la docencia y, me ha gustado bastante compartir
+                mi punto de vista del ámbito laboral que se vive hoy en día en el negocio del desarrollo, además de que
+                me ayuda a mantenerme actualizado con las nuevas tecnologías emergentes.
+            </p>
+            <h3 class="main-color">Visión de servicio</h3>
+            <p>
+                En este negocio no se vende un producto tangible, sino que yo como profesional te proporciono un
+                servicio, a ti como mi cliente y, ¿por qué te cuento esto?, pues tuve la oportunidad de aprender en
+                otros trabajos que un cliente fiel es aquel que recibe un servicio excelente, siendo esto así yo busco
+                brindar el mejor servicio posible a mis clientes. Te invito a ser uno de mis clientes.
+            </p>
+        </div>
+    </section>
+    <script type="module" src="assets/js/main.js"></script>
+</main>
 </body>
 </html>
