@@ -4,7 +4,7 @@
 @import "reset.css";
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     border-radius: 10px;
 }
 
@@ -154,7 +154,8 @@ ul.home-profile {
 
 .main-section {
     width: 70%;
-    min-height: 500px;
+    height: 75vh;
+    /*min-height: 500px;*/
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
@@ -164,6 +165,7 @@ ul.home-profile {
     display: grid;
     grid-template-areas: "avatar content";
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
 }
 
 .avatar {
@@ -246,6 +248,8 @@ ul.home-profile {
 
 .content {
     grid-area: content;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .content-img {
@@ -253,8 +257,36 @@ ul.home-profile {
     height: 250px;
 }
 
-.content > p {
+.sobre-mi-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sobre-mi-content > p {
     margin-bottom: 2rem;
+}
+
+.contact-list {
+    padding: 2rem;
+}
+
+.contact-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-list-item h3 {
+    margin-right: 1rem;
+    flex-grow: 0;
+}
+
+.contact-list-item p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    flex-grow: 2;
 }
 
 /*Helpers class*/
