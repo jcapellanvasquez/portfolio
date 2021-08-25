@@ -1,4 +1,4 @@
-// import * as helpers from './helpers-module.js';
+import * as helpers from './helpers-module.js';
 
 //TODO ordenar documento js
 
@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     let links = document.querySelectorAll(".navbar-item > a");
     let profileDev = document.querySelectorAll("li.profile-dev");
     let profileTeacher = document.querySelectorAll("li.profile-teacher");
-
+    let menuButton = document.querySelector('a.nav-button')
 
     links.forEach(a => a.addEventListener("click", link => {
         links.forEach(a => {
@@ -73,4 +73,14 @@ window.addEventListener("load", () => {
 
     scrollListener();
     window.document.addEventListener("scroll", scrollListener, {passive: true})
+
+    menuButton.addEventListener("click", event => {
+        event.preventDefault()
+        const navbarNav = document.querySelector('ul.navbar-nav')
+        const icon = document.querySelector('a.nav-button i')
+        navbarNav.classList.toggle('show-navbar')
+        icon.classList.toggle('fa-bars')
+        icon.classList.toggle('fa-times')
+    })
+
 });
